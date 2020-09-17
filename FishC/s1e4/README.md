@@ -12,14 +12,21 @@
 	  1.1.3 关联git账号
 	 	 git config --global user.name "username"
 	 	 git config --global user.email "email"
-	  1.1.4 将本地仓库与远程仓库关联
-	 	 git remote origin master https://github.com/username/repositoryName
+	  1.1.4 将本地文件夹与远程仓库关联
+	 	 git remote add origin https://github.com/username/repositoryName
 	 1.2 使用git更新/提交代码
-	  1.2.1 提交
+	  1.2.1 更新
+	  	git pull origin master
+	  1.2.2 将文件夹内的文件添加到仓库中
+	  	git add /home/chen/git/FishC
+	  	git add .
+	  1.2.3 提交信息
+	  	git commit -m "C first commit"
+	  1.2.4 推送到远程master分支
+	  	git push -u origin master
 	2. 命令行的特殊用法
 	 2.1 gcc test.c -o test && ./test : 编译test.c另存为test并直接运行test
-	 
-	   
+	
 #2 C语言语法
 	1. C关键字
 	 1.1 char : 字符型,占用一个字节
@@ -33,4 +40,3 @@
 	 2.4 %.9f或%11.9f : 9位小数的双精度浮点型(共11位)
 	 2.5 %s : 字符串
 
-	 
