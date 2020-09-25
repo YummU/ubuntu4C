@@ -14,6 +14,9 @@ C语言学习记录
 	2. sudo : 获取root权限
 	3. gcc : linux编译工具 
 	 3.1 gcc test.c -o test : 将test.c文件编译,并另存为test
+	 3.2 gcc test.c -o test && ./test : 编译test.c另存为test并直接运行test
+	 3.3 gcc test.c && ./a.out : 编译test.c并直接运行
+	 3.4 gcc xxx -lm : 若代码中有pow函数且参数中带有变量，则需要使用-lm
 	4. ./test : 运行test
 	5. git的用法总结:
 	 5.1 配置git
@@ -36,9 +39,7 @@ C语言学习记录
 	  	git commit -m "C first commit"
 	  5.2.4 推送到远程master分支
 	  	git push -u origin master
-	6. 命令行的特殊用法
-	 6.1 gcc test.c -o test && ./test : 编译test.c另存为test并直接运行test
-	7.打开当前路径的图形化界面
+	6.打开当前路径的图形化界面
 	 7.1 nautilus $PWD
 	
 #2 C语言语法
